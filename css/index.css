@@ -1,0 +1,142 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    min-width: 340px;
+}
+
+.container {
+    max-width: 1080px;
+    padding: 0 10px;
+    margin: 0 auto;
+  }
+
+/* SECTION task-grid */
+.task-grid {
+    max-width: 100%;
+    margin: 47px auto 28px auto;
+}
+
+.task-grid button {
+    width: 100%;
+    max-width: 250px;
+    height: 30px;
+    border: 1px solid #422755;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #422755;
+    background-color: transparent;
+    margin-bottom: 6px;
+    margin-top: 7px;
+    cursor: pointer;
+}
+
+.task-grid button:hover {
+    background-color: #422755;
+    color: white;
+}
+  
+.task-card {
+    display: grid;
+    gap: 13px;
+    grid-template-columns: 147px 1fr;
+    box-sizing: border-box;
+    height: 210px;
+    width: 100%;
+    padding: 16px 14px 16px 11px;
+    border: 1px solid black;
+    border-radius: 14px;
+    margin-bottom: 24px;
+}
+  
+.highlight {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    position: relative;
+}
+  
+.highlight-mark {
+    position: absolute;
+    top: 25px;
+    left: -5px;
+    width: 102px;
+    height: 29px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    color: #fff;
+    background-color: #422755;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.highlight-mark span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+}
+  
+.task-img {
+    max-width: 147px;
+    overflow: hidden;
+}
+
+.task-img img {
+    object-fit: cover;
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+}
+  
+.task-details {
+    display: grid;
+    grid-template-rows: 86px 1fr;
+}
+
+.task-details p {
+    display: inline-block;
+    margin: 0px;
+    font-size: 11px;
+    line-height: 16px;
+    margin-bottom: 7px;
+    max-width: 100%;
+    height: 62px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+  
+
+.task-details-bottom {
+    align-self: end;
+    width: 100%;
+}
+  
+h3 {
+    color: #414141;
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+  
+.deadline {
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: bold;
+}
+  
+.date {
+    line-height: 24px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #F04837;
+}
+
+.inclusion-date {
+    font-size: 10px;
+    line-height: 14px;
+    color: #414141;
+}
