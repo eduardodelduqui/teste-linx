@@ -9,7 +9,72 @@ body {
     margin: 0 auto;
   }
 
-/* SECTION task-grid */
+.header-search {
+    box-sizing: border-box;
+    height: 146px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 29px 16px 30px 17px;
+    background-color: #FEAF3D;
+    border-radius: 8px;
+    margin: 0 auto;
+}
+  
+.search-form {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 8px;
+    width: 100%;
+}
+
+  .search-form input {
+    border-radius: 8px;
+    padding: 9px;
+    border: none;
+    outline: none;
+    background-color: white;
+}
+
+.search-form button {
+    background-color: #6E4B87;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    height: 100%;
+    border: none;
+    border-radius: 8px;
+  }
+  
+.arrange {
+    display: flex;
+    align-items: center;
+    height: 34px;
+    font-size: 14px;
+    justify-content: space-between;
+  }
+
+.arrange span {
+    font-weight: 600;
+    color: white;
+    white-space: nowrap;
+}
+
+.arrange select {
+    height: 34px;
+    width: 100%;
+    padding: 7px 16px 8px 29px;
+    margin-left: 20px;
+    appearance: none;
+    border-radius: 8px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    color: #414141;
+}
+
+/* SECTION TASK */
 .task-grid {
     max-width: 100%;
     margin: 47px auto 28px auto;

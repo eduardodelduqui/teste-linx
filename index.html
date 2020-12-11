@@ -30,12 +30,13 @@
             
 
         <section class="container">
-            <header>
-                    <form>
-                        <input type="text" name="Busque tarefas" placeholder="Busque tarefas">
-                        <button>Buscar</button>
-                    </form>
-                    Organizar por:
+            <header class="header-search">
+                <form class="search-form">
+                    <input type="text" name="Busque tarefas" placeholder="Busque tarefas">
+                    <button>Buscar</button>
+                </form>
+                <div class="arrange"> 
+                    <span>Organizar por:</span>
                     <select>
                         <option value="relevance">
                             Prazo
@@ -44,7 +45,8 @@
                             Data de inclusão
                         </option>
                     </select>
-            </header>
+                </div>
+        </header>
             
             <section class="task-grid">
                 <div class="task-card highlight">
