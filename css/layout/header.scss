@@ -1,0 +1,35 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    min-width: 340px;
+}
+
+/* BANNER */
+ 
+.header-banner {
+    box-sizing: border-box;
+    background-color: $main_color;
+    color: white;
+    text-align: center;
+    height: 264px;
+    padding: 73px 44px 93px 44px;
+    margin-bottom: 56px;
+
+    h1 {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 33px;
+        margin-bottom: 21px
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 25px;
+        font-weight: 400;
+    }
+}
+
+.container {
+    max-width: 1080px;
+    padding: 0 10px;
+    margin: 0 auto;
+}

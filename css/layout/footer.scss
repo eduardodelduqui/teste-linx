@@ -1,0 +1,31 @@
+/* FOOTER */
+
+.linx-logo {
+    width: 157px;
+    display: block;
+    margin: 0 auto;
+}
+
+.about-us p{
+    color: #414141;
+    margin: 40px 17px 40px 18px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 19px;
+}
+
+.disclaimer {
+    margin-top: 48px;
+    position: relative;
+    text-align: center;
+    background-color: $main_color;
+    height: 126px;
+
+    p {
+        @include centralized_position;
+        width: 100%;
+        color: #fff;
+        font-size: 12px;
+        line-height: 16px;
+    }
+}

@@ -1,0 +1,10 @@
+@mixin border_radius($radius: 8px) {
+    border-radius: $radius;
+}
+
+@mixin centralized_position {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
