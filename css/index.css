@@ -7,7 +7,9 @@ body {
     max-width: 1080px;
     padding: 0 10px;
     margin: 0 auto;
-  }
+}
+
+/* SEARCH FORM */
 
 .header-search {
     box-sizing: border-box;
@@ -68,6 +70,7 @@ body {
     padding: 7px 16px 8px 29px;
     margin-left: 20px;
     appearance: none;
+    border: none;
     border-radius: 8px;
     font-family: "Open Sans", sans-serif;
     font-size: 14px;
@@ -204,4 +207,37 @@ h3 {
     font-size: 10px;
     line-height: 14px;
     color: #414141;
+}
+
+.linx-logo {
+    width: 157px;
+    display: block;
+    margin: 0 auto;
+}
+
+.about-us p {
+    color: #414141;
+    margin: 40px 17px 40px 18px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 19px;
+}
+  
+.disclaimer {
+    margin-top: 48px;
+    position: relative;
+    text-align: center;
+    background-color: #422755;
+    height: 126px;
+}
+
+.disclaimer p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    color: #fff;
+    font-size: 12px;
+    line-height: 16px;
 }
