@@ -4,14 +4,33 @@
     width: 157px;
     display: block;
     margin: 0 auto;
+
+    @media (min-width: 1120px) {
+        width: 234px;
+        align-self: flex-start;
+    }
 }
 
-.about-us p{
-    color: #414141;
-    margin: 40px 17px 40px 18px;
-    text-align: center;
-    font-size: 12px;
-    line-height: 19px;
+.about-us{
+    p{
+        color: #414141;
+        margin: 40px 17px 40px 18px;
+        text-align: center;
+        font-size: 12px;
+        line-height: 19px;
+
+        @media (min-width: 1120px) {
+            margin: 0 0 0 54px;
+            text-align: left;
+            font-size: 14px;
+        }
+    } 
+
+    @media (min-width: 1120px) {
+        display: flex;
+        width: 987px;
+        margin: 0 auto;
+    }
 }
 
 .disclaimer {

@@ -12,6 +12,10 @@
     background-color: #FEAF3D;
     @include border_radius;
     margin: 0 auto;
+
+    @media (min-width: 1120px) {
+        padding: 25px 145px 26px 108px;
+    }
 }
 
 .search-form {
@@ -37,6 +41,7 @@
         height: 100%;
         border: none;
         @include border_radius;
+        width: 69px;
     }
 }
 
@@ -60,6 +65,7 @@
         margin-left: 20px;
         appearance: none;
         @include border_radius;
+        border: none;
         font-family: 'Open Sans', sans-serif;
         font-size: 14px;
         color:$text_color;
