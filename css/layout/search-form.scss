@@ -48,6 +48,10 @@
         border: none;
         @include border_radius;
         width: 69px;
+
+        &:focus {
+            outline: none;
+        }
     }
 
     @media (min-width: 740px) {
@@ -101,5 +105,16 @@
             font-size: 14px;
             color: $text_color;
         }
+
+        &:focus {
+            outline: none;
+        }
     }
+
+    i {
+        position: relative;
+        transform: scale(1.6);
+        left: -30px;
+        color: $text_color;
+    }   
 }

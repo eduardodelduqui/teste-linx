@@ -3,16 +3,24 @@ body {
     min-width: 340px;
 }
 
+.container {
+    max-width: 1080px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
 /* BANNER */
  
 .header-banner {
+    position: relative;
     box-sizing: border-box;
     background-color: $main_color;
     color: white;
     text-align: center;
     height: 264px;
-    padding: 73px 44px 93px 44px;
+    padding: 73px 0px 93px 0px;
     margin-bottom: 56px;
+    border: none;
 
     h1 {
         font-weight: 700;
@@ -25,11 +33,15 @@ body {
         font-size: 16px;
         line-height: 25px;
         font-weight: 400;
+        margin: 0px 44px;
     }
 }
 
-.container {
-    max-width: 1080px;
-    padding: 0 10px;
-    margin: 0 auto;
+.angled-header-background {
+    position: absolute;
+    height: 45px;
+    width: 100%;
+    bottom: 0px;
+    background: linear-gradient(to top right, rgb(255, 255, 255) 50%, rgba(255, 255, 255, 0) 51.5%);
 }
+

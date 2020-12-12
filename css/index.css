@@ -3,15 +3,23 @@ body {
   min-width: 340px;
 }
 
+.container {
+  max-width: 1080px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
 /* BANNER */
 .header-banner {
+  position: relative;
   box-sizing: border-box;
   background-color: #422755;
   color: white;
   text-align: center;
   height: 264px;
-  padding: 73px 44px 93px 44px;
+  padding: 73px 0px 93px 0px;
   margin-bottom: 56px;
+  border: none;
 }
 .header-banner h1 {
   font-weight: 700;
@@ -23,12 +31,15 @@ body {
   font-size: 16px;
   line-height: 25px;
   font-weight: 400;
+  margin: 0px 44px;
 }
 
-.container {
-  max-width: 1080px;
-  padding: 0 10px;
-  margin: 0 auto;
+.angled-header-background {
+  position: absolute;
+  height: 45px;
+  width: 100%;
+  bottom: 0px;
+  background: linear-gradient(to top right, white 50%, rgba(255, 255, 255, 0) 51.5%);
 }
 
 /* SEARCH FORM*/
@@ -80,6 +91,9 @@ body {
   border: none;
   border-radius: 8px;
   width: 69px;
+}
+.search-form button:focus {
+  outline: none;
 }
 @media (min-width: 740px) {
   .search-form {
@@ -135,6 +149,15 @@ body {
     color: #414141;
   }
 }
+.arrange select:focus {
+  outline: none;
+}
+.arrange i {
+  position: relative;
+  transform: scale(1.6);
+  left: -30px;
+  color: #414141;
+}
 
 /* TASKS */
 .task-grid {
@@ -166,6 +189,9 @@ body {
   background-color: #422755;
   color: white;
 }
+.task-grid button:focus {
+  outline: none;
+}
 @media (min-width: 720px) {
   .task-grid {
     display: grid;
@@ -186,13 +212,12 @@ body {
   display: grid;
   gap: 13px;
   grid-template-columns: 147px 1fr;
-  box-sizing: border-box;
   height: 210px;
-  width: 100%;
   padding: 16px 14px 16px 11px;
-  border: 1px solid black;
+  border: 1px solid #000000;
   border-radius: 14px;
   margin-bottom: 24px;
+  box-sizing: border-box;
 }
 .task-card h3 {
   color: #414141;
@@ -215,7 +240,7 @@ body {
     grid-template-columns: none;
     height: 401px;
     max-width: 253px;
-    padding: 19px 18px 13px 17px;
+    padding: 18px 16px 12px 17px;
   }
 }
 
@@ -257,6 +282,8 @@ body {
 }
 .task-img img {
   object-fit: cover;
+  object-position: 60% 50%;
+  transform: scale(1.05);
   width: 100%;
   min-height: 100%;
   overflow: hidden;
@@ -287,6 +314,7 @@ body {
 }
 @media (min-width: 1120px) {
   .task-details p {
+    font-size: 12px;
     margin: 0px;
   }
 }
