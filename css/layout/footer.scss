@@ -5,7 +5,7 @@
     display: block;
     margin: 0 auto;
 
-    @media (min-width: 1120px) {
+    @include for-size(desktop-up) {
         width: 234px;
         align-self: flex-start;
     }
@@ -19,14 +19,14 @@
         font-size: 12px;
         line-height: 19px;
 
-        @media (min-width: 1120px) {
+        @include for-size(desktop-up) {
             margin: 0 0 0 54px;
             text-align: left;
             font-size: 14px;
         }
     } 
 
-    @media (min-width: 1120px) {
+    @include for-size(desktop-up) {
         display: flex;
         width: 987px;
         margin: 0 auto;
@@ -41,7 +41,7 @@
     height: 126px;
 
     p {
-        @include centralized_position;
+        @extend %centralized_position;
         width: 100%;
         color: #fff;
         font-size: 12px;

@@ -1,5 +1,5 @@
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: $text-font;
     min-width: 340px;
 }
 
@@ -26,7 +26,12 @@ body {
         font-weight: 700;
         font-size: 24px;
         line-height: 33px;
-        margin-bottom: 21px
+        margin-bottom: 21px;
+
+        @include for-size(tablet-portrait-up){
+            font-size: 36px;
+            line-height: 49px;
+        }
     }
 
     p {
@@ -34,6 +39,10 @@ body {
         line-height: 25px;
         font-weight: 400;
         margin: 0px 44px;
+
+        @include for-size(tablet-portrait-up){
+            font-size: 18px;
+        }
     }
 }
 

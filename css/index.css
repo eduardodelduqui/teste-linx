@@ -1,3 +1,10 @@
+.disclaimer p, .highlight-mark span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   min-width: 340px;
@@ -27,11 +34,22 @@ body {
   line-height: 33px;
   margin-bottom: 21px;
 }
+@media (min-width: 720px) {
+  .header-banner h1 {
+    font-size: 36px;
+    line-height: 49px;
+  }
+}
 .header-banner p {
   font-size: 16px;
   line-height: 25px;
   font-weight: 400;
   margin: 0px 44px;
+}
+@media (min-width: 720px) {
+  .header-banner p {
+    font-size: 18px;
+  }
 }
 
 .angled-header-background {
@@ -55,16 +73,18 @@ body {
   border-radius: 8px;
   margin: 0 auto;
 }
-@media (min-width: 740px) {
+@media (min-width: 720px) {
   .header-search {
     flex-direction: row;
     height: 85px;
-    padding: 25px 45px 26px 45px;
+    padding-top: 25px;
+    padding-bottom: 26px;
   }
 }
-@media (min-width: 1120px) {
+@media (min-width: 900px) {
   .header-search {
-    padding: 25px 145px 26px 108px;
+    padding-right: 45px;
+    padding-left: 45px;
   }
 }
 
@@ -74,6 +94,7 @@ body {
   background-color: white;
   border-radius: 8px;
   width: 100%;
+  height: 34px;
 }
 .search-form input {
   border-radius: 8px;
@@ -81,6 +102,10 @@ body {
   border: none;
   outline: none;
   background-color: white;
+}
+.search-form input::-webkit-input-placeholder, .search-form input:-moz-placeholder, .search-form input::-moz-placeholder, .search-form input:-ms-input-placeholder {
+  font-size: 12px;
+  font-family: "Open Sans", sans-serif;
 }
 .search-form button {
   background-color: #6E4B87;
@@ -95,7 +120,7 @@ body {
 .search-form button:focus {
   outline: none;
 }
-@media (min-width: 740px) {
+@media (min-width: 720px) {
   .search-form {
     width: 311px;
   }
@@ -113,7 +138,7 @@ body {
   color: white;
   white-space: nowrap;
 }
-@media (min-width: 740px) {
+@media (min-width: 720px) {
   .arrange span {
     box-sizing: border-box;
     font-weight: 600;
@@ -137,7 +162,7 @@ body {
   color: #414141;
   background-color: white;
 }
-@media (min-width: 740px) {
+@media (min-width: 720px) {
   .arrange select {
     height: 34px;
     width: 193px;
@@ -178,7 +203,7 @@ body {
   margin-top: 7px;
   cursor: pointer;
 }
-@media (min-width: 1120px) {
+@media (min-width: 1200px) {
   .task-grid button {
     width: 100%;
     height: 40px;
@@ -200,7 +225,7 @@ body {
     max-width: 100%;
   }
 }
-@media (min-width: 1120px) {
+@media (min-width: 1200px) {
   .task-grid {
     grid-template-columns: repeat(4, 253px);
     width: 1080px;
@@ -232,7 +257,7 @@ body {
     max-width: 100%;
   }
 }
-@media (min-width: 1120px) {
+@media (min-width: 1200px) {
   .task-card {
     display: grid;
     grid-template-rows: 183px 1fr;
@@ -264,13 +289,9 @@ body {
   border-bottom-right-radius: 5px;
 }
 .highlight-mark span {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   white-space: nowrap;
 }
-@media (min-width: 1120px) {
+@media (min-width: 1200px) {
   .highlight-mark {
     left: -9px;
   }
@@ -282,13 +303,18 @@ body {
 }
 .task-img img {
   object-fit: cover;
-  object-position: 60% 50%;
+  object-position: 55% 50%;
   transform: scale(1.05);
   width: 100%;
   min-height: 100%;
   overflow: hidden;
 }
-@media (min-width: 1120px) {
+@media (min-width: 1200px) {
+  .task-img img {
+    object-position: 60% 50%;
+  }
+}
+@media (min-width: 1200px) {
   .task-img {
     max-width: 100%;
   }
@@ -312,13 +338,13 @@ body {
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
 }
-@media (min-width: 1120px) {
+@media (min-width: 1200px) {
   .task-details p {
     font-size: 12px;
     margin: 0px;
   }
 }
-@media (min-width: 1120px) {
+@media (min-width: 1200px) {
   .task-details {
     grid-template-rows: 72px 1fr;
   }
@@ -354,7 +380,7 @@ body {
   display: block;
   margin: 0 auto;
 }
-@media (min-width: 1120px) {
+@media (min-width: 1200px) {
   .linx-logo {
     width: 234px;
     align-self: flex-start;
@@ -368,14 +394,14 @@ body {
   font-size: 12px;
   line-height: 19px;
 }
-@media (min-width: 1120px) {
+@media (min-width: 1200px) {
   .about-us p {
     margin: 0 0 0 54px;
     text-align: left;
     font-size: 14px;
   }
 }
-@media (min-width: 1120px) {
+@media (min-width: 1200px) {
   .about-us {
     display: flex;
     width: 987px;
@@ -391,10 +417,6 @@ body {
   height: 126px;
 }
 .disclaimer p {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   width: 100%;
   color: #fff;
   font-size: 12px;
