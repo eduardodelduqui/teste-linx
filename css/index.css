@@ -44,6 +44,13 @@ body {
   border-radius: 8px;
   margin: 0 auto;
 }
+@media (min-width: 740px) {
+  .header-search {
+    flex-direction: row;
+    height: 85px;
+    padding: 25px 45px 26px 45px;
+  }
+}
 @media (min-width: 1120px) {
   .header-search {
     padding: 25px 145px 26px 108px;
@@ -74,6 +81,11 @@ body {
   border-radius: 8px;
   width: 69px;
 }
+@media (min-width: 740px) {
+  .search-form {
+    width: 311px;
+  }
+}
 
 .arrange {
   display: flex;
@@ -87,6 +99,17 @@ body {
   color: white;
   white-space: nowrap;
 }
+@media (min-width: 740px) {
+  .arrange span {
+    box-sizing: border-box;
+    font-weight: 600;
+    color: white;
+    white-space: nowrap;
+    width: 98px;
+    line-height: 19px;
+    font-style: normal;
+  }
+}
 .arrange select {
   height: 34px;
   width: 100%;
@@ -98,6 +121,19 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
   color: #414141;
+  background-color: white;
+}
+@media (min-width: 740px) {
+  .arrange select {
+    height: 34px;
+    width: 193px;
+    padding: 7px 16px 8px 29px;
+    appearance: none;
+    border-radius: 8px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    color: #414141;
+  }
 }
 
 /* TASKS */

@@ -13,6 +13,12 @@
     @include border_radius;
     margin: 0 auto;
 
+    @media (min-width: 740px) {
+        flex-direction: row;
+        height: 85px;
+        padding: 25px 45px 26px 45px;
+    }
+
     @media (min-width: 1120px) {
         padding: 25px 145px 26px 108px;
     }
@@ -43,6 +49,10 @@
         @include border_radius;
         width: 69px;
     }
+
+    @media (min-width: 740px) {
+        width: 311px;
+    }
 }
 
 .arrange {
@@ -56,6 +66,16 @@
         font-weight: 600;
         color: white;
         white-space: nowrap;
+
+        @media (min-width: 740px) {
+            box-sizing: border-box;
+            font-weight: 600;
+            color: white;
+            white-space: nowrap;
+            width: 98px;
+            line-height: 19px;
+            font-style: normal;
+        }
     }
 
     select {
@@ -69,5 +89,17 @@
         font-family: 'Open Sans', sans-serif;
         font-size: 14px;
         color:$text_color;
+        background-color: white;
+
+        @media (min-width: 740px) {
+            height: 34px;
+            width: 193px;
+            padding: 7px 16px 8px 29px;
+            appearance: none;
+            @include border_radius;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 14px;
+            color: $text_color;
+        }
     }
 }
