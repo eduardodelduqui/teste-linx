@@ -95,6 +95,7 @@
         padding: 7px 16px 8px 29px;
         margin-left: 20px;
         appearance: none;
+        -webkit-appearance: none;
         @include border_radius;
         border: none;
         font-family: $text-font;
@@ -103,13 +104,10 @@
         background-color: white;
 
         @include for-size(tablet-portrait-up) {
-            height: 34px;
             width: 193px;
             padding: 7px 16px 8px 29px;
-            appearance: none;
             @include border_radius;
             font-family: $text-font;
-            font-size: 14px;
             color: $text_color;
         }
 
@@ -120,6 +118,7 @@
 
     i {
         position: relative;
+        width: 0px;
         transform: scale(1.6);
         left: -30px;
         color: $text_color;

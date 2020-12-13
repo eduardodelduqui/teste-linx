@@ -155,6 +155,7 @@ body {
   padding: 7px 16px 8px 29px;
   margin-left: 20px;
   appearance: none;
+  -webkit-appearance: none;
   border-radius: 8px;
   border: none;
   font-family: "Open Sans", sans-serif;
@@ -164,13 +165,10 @@ body {
 }
 @media (min-width: 720px) {
   .arrange select {
-    height: 34px;
     width: 193px;
     padding: 7px 16px 8px 29px;
-    appearance: none;
     border-radius: 8px;
     font-family: "Open Sans", sans-serif;
-    font-size: 14px;
     color: #414141;
   }
 }
@@ -179,6 +177,7 @@ body {
 }
 .arrange i {
   position: relative;
+  width: 0px;
   transform: scale(1.6);
   left: -30px;
   color: #414141;
