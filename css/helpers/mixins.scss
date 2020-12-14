@@ -2,6 +2,14 @@
     border-radius: $radius;
 }
 
+@mixin overflow_ellipsis($line) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: $line;
+    -webkit-box-orient: vertical;
+}
+
 @mixin placeholder {
     &::-webkit-input-placeholder, 
     &:-moz-placeholder, 
@@ -21,10 +29,14 @@
     @if $size == desktop-up {
         @media (min-width: 1200px){@content;}
     }
-    @if $size == tablet-portrait-up {
-        @media (min-width: 720px) {@content;}
-    }
     @if $size == tablet-landscape-up {
         @media (min-width: 900px) {@content;}
     }
+    @if $size == tablet-portrait-up {
+        @media (min-width: 720px) {@content;}
+    }
+    @if $size == small-smartphone-up {
+        @media (max-width: 339px) {@content;}
+    }
+    
 }

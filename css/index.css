@@ -7,7 +7,7 @@
 
 body {
   font-family: "Open Sans", sans-serif;
-  min-width: 340px;
+  min-width: 300px;
 }
 
 .container {
@@ -93,7 +93,7 @@ body {
   justify-content: space-between;
   background-color: white;
   border-radius: 8px;
-  width: 100%;
+  max-width: 100%;
   height: 34px;
 }
 .search-form input {
@@ -102,6 +102,7 @@ body {
   border: none;
   outline: none;
   background-color: white;
+  width: 100%;
 }
 .search-form input::-webkit-input-placeholder, .search-form input:-moz-placeholder, .search-form input::-moz-placeholder, .search-form input:-ms-input-placeholder {
   font-size: 12px;
@@ -115,14 +116,20 @@ body {
   height: 100%;
   border: none;
   border-radius: 8px;
-  width: 69px;
+  max-width: 69px;
+  width: 100%;
 }
 .search-form button:focus {
   outline: none;
 }
+@media (max-width: 339px) {
+  .search-form {
+    max-width: 100%;
+  }
+}
 @media (min-width: 720px) {
   .search-form {
-    width: 311px;
+    max-width: 311px;
   }
 }
 
@@ -165,7 +172,7 @@ body {
 }
 @media (min-width: 720px) {
   .arrange select {
-    width: 193px;
+    max-width: 193px;
     padding: 7px 16px 8px 29px;
     border-radius: 8px;
     font-family: "Open Sans", sans-serif;
@@ -247,8 +254,25 @@ body {
   color: #414141;
   font-size: 14px;
   line-height: 19px;
+  height: 19px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
   font-weight: bold;
   margin-bottom: 5px;
+}
+@media (max-width: 339px) {
+  .task-card {
+    grid-template-rows: 183px 1fr;
+    gap: 11px;
+    grid-template-columns: none;
+    height: 401px;
+    max-width: 300px;
+    padding: 18px 16px 12px 17px;
+    margin: 0 auto 24px auto;
+  }
 }
 @media (min-width: 720px) {
   .task-card {
@@ -318,6 +342,11 @@ body {
     max-width: 100%;
   }
 }
+@media (max-width: 339px) {
+  .task-img {
+    max-width: 100%;
+  }
+}
 
 .task-details {
   display: grid;
@@ -339,8 +368,14 @@ body {
 }
 @media (min-width: 1200px) {
   .task-details p {
+    height: 49px;
     font-size: 12px;
     margin: 0px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
   }
 }
 @media (min-width: 1200px) {

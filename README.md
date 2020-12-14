@@ -23,9 +23,11 @@ Foram realizados todos os processos solicitados mantendo a fidelidade do *layout
 
 - Utilizado o pré-processador Sass, separando os arquivos para uma maior legibilidade;
 
-- Responsividade implementada;
+- Responsividade implementada até 300px;
 
-- Foram propostas melhorias para a padronização dos cards de tarefas, mantendo o layout independente do tamanho da descrição e definição de prazo;
+- Para responsividade abaixo de 340px, foi ajustado o layout com a descrição sendo apresentada abaixo da imagem.
+
+- Foram propostas melhorias para a padronização dos cards de tarefas, mantendo o layout independente do tamanho da descrição, tamanho do nome e definição de prazo;
 
 - Utilizado *javascript* para a formatação da data presente no **card de tarefa**;
 
